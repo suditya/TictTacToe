@@ -13,8 +13,10 @@ const Board = () => {
     }, 400);
   }, [boxArray]);
 
-  const alertWinner = (value: string) => {
-    if (value == X) alert("Player 1 won the game!");
+  const alertWinner = (winner?: string) => {
+    if (winner == null) {
+      alert("No One Won Both are losers!");
+    } else if (winner == X) alert("Player 1 won the game!");
     else alert("Player 2 won the game!");
 
     //end the game
@@ -23,7 +25,7 @@ const Board = () => {
   const checkWinner = () => {
     console.log(boxArray);
     if (boxArray.every((box) => box != null)) {
-      alert("Game Draw");
+      alertWinner();
       return;
     }
     // Rows

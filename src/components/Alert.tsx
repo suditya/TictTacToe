@@ -1,6 +1,11 @@
-const Alert = (props) => {
+interface IAlert {
+  won?: string;
+}
+
+const Alert = (props: IAlert) => {
   return (
     <div className="alert-wrapper">
+      <h1>ALERT</h1>
       {props.won === null ? (
         <p>Game Drawn!</p>
       ) : props.won === "X" ? (
