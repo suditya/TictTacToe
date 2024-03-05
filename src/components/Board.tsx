@@ -15,7 +15,7 @@ const Board = () => {
 
   const alertWinner = (winner?: string) => {
     if (winner == null) {
-      alert("Game Drawn!");
+      alert("No One Won Both are losers!");
     } else if (winner == X) alert("Player 1 won the game!");
     else alert("Player 2 won the game!");
 
