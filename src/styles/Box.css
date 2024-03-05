@@ -1,0 +1,13 @@
+.board-box {
+  width: 200px;
+  height: 200px;
+  font-size: xx-large;
+  display: flex;
+  cursor: pointer;
+  padding: 2px;
+  background-color: white;
+  border: 1px solid rgb(0, 0, 0);
+  /* border-radius: 14px; */
+  justify-content: center;
+  align-items: center;
+}
